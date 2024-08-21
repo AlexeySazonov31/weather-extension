@@ -1,0 +1,48 @@
+{
+  "name": "weather-extension-npr",
+  "version": "1.0.0",
+  "description": "Shows the weather next to NPR news.",
+  "main": "index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexeySazonov31/weather-extension"
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "Alexey Sazonov",
+    "email": "sazonleha010203@gmail.com"
+  },
+  "contributors": [],
+  "scripts": {
+    "build": "webpack --config webpack.config.cjs",
+    "types": "npx tsc"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/chrome": "^0.0.270",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "html-webpack-plugin": "^5.6.0",
+    "typescript": "^5.5.4",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
