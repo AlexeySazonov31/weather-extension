@@ -25,8 +25,8 @@ module.exports = {
         to: path.resolve('dist'),
       },
       {
-        from: path.resolve('src/icons'),
-        to: path.resolve('dist/icons'),
+        from: path.resolve('public'),
+        to: path.resolve('dist'),
       }]
     })
   ],
