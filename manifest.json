@@ -16,5 +16,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [{ "matches": ["https://www.npr.org/*"], "js": ["contentScript.js"] }]
+  "content_scripts": [
+    { "matches": ["https://www.npr.org/*"], "js": ["contentScript.js"], "css": ["styles.css"] }
+  ]
 }

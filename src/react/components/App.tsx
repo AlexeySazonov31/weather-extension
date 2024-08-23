@@ -18,17 +18,31 @@ const App = () => {
   }, []);
 
   const handleCityChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const newSelectedCity = cities.find((city) => city.name === event.target.value);
-    if (newSelectedCity) {
-      setSelectedCity(newSelectedCity);
-      chrome.storage.sync.set({ city: newSelectedCity });
+    const cityName = event.target.value;
+    const newCity = cities.find((city) => city.name === cityName);
+
+    if (newCity) {
+      setSelectedCity(newCity);
+      chrome.storage.sync.set({ city: newCity });
     }
   };
 
   return (
-    <main>
-      <h1>Select a city for weather updates</h1>
-      <select onChange={handleCityChange} value={selectedCity.name}>
+    <main style={{ padding: "10px", minWidth: "300px" }}>
+      <h1 style={{ fontSize: "18px", marginBottom: "10px", marginTop: 0 }}>
+        Select a city for weather updates
+      </h1>
+      <select
+        onChange={handleCityChange}
+        value={selectedCity.name}
+        style={{
+          width: "100%",
+          padding: "5px",
+          borderRadius: "5px",
+          border: "1px solid #ccc",
+          fontSize: "16px",
+        }}
+      >
         {cities.map((city) => (
           <option key={city.name} value={city.name}>
             {city.name}
