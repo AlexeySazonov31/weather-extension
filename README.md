@@ -10,7 +10,15 @@ Built with React and Webpack.
 
 ## Getting Started
 
-1. **Install dependencies:**
+1. **Clone the project**
+
+```bash
+git clone https://github.com/AlexeySazonov31/weather-extension.git
+
+cd weather-extension
+```
+
+2. **Install dependencies:**
 
 Open your terminal and run:
 
@@ -18,7 +26,7 @@ Open your terminal and run:
 npm install
 ```
 
-2. **Build:**
+3. **Build:**
 
 After installing dependencies, build the project with:
 
@@ -28,7 +36,7 @@ npm run build
 
 This will create a dist/ folder containing the production-ready files.
 
-3. **Load the extension in Chrome:**
+4. **Load the extension in Chrome:**
 
 - Open Chrome and navigate to chrome://extensions
 - Enable "Developer mode" using the toggle switch
